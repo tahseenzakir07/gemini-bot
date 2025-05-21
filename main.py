@@ -4,7 +4,7 @@ import speech_recognition as sr #type:ignore
 import os
 from psycopg2 import pool # type: ignore
 
-API_KEY = "AIzaSyDLey3anB1xnC0_c40cmr58Tua5rudAzjg" 
+API_KEY = "your_apikey" 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
 
@@ -13,9 +13,9 @@ recognizer = sr.Recognizer()
 connection_pool = pool.ThreadedConnectionPool(
     minconn=1,
     maxconn=5,
-    dbname="Gemini Assistant",
-    user="postgres",
-    password="dbsm",
+    dbname="dbname",
+    user="user",
+    password="password",
     host="localhost",
     port="5432"
 )
