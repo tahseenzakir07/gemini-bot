@@ -6,7 +6,7 @@ from psycopg2 import pool # type: ignore
 
 API_KEY = "your_apikey" 
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
+model = genai.GenerativeModel(model_name="models/gemini-2.5-flash")
 
 recognizer = sr.Recognizer()
 
