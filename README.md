@@ -1,4 +1,4 @@
-#Gemini Voice-Enabled Chatbot with PostgreSQL Persistence
+# Gemini Voice-Enabled Chatbot with PostgreSQL Persistence
 
 A multimodal AI chatbot interface built with Python, Gradio, and Google Gemini 1.5 Flash. This application allows users to interact via text or voice and automatically logs all conversations into a PostgreSQL database.
 
